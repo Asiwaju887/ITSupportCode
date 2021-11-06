@@ -1,0 +1,2 @@
+uname -r --> version of kernel you have
+sudo apt full-upgrade --> kernel update
