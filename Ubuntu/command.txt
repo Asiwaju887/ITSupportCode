@@ -20,3 +20,7 @@ sudo kill [PROCESS ID] ---> Kill process
 top --> Show process usage in CPU
 uptime ---> time system is running and CPU load average over period od time
 lsof --> list open files and what process is using them
+
+**System Log**
+less /var/log/syslog | grep searchKeyword ---> To search for log with a key word
+tail -f /vaar/log/syslog ---> check log on realtime
