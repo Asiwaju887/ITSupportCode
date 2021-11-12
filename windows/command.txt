@@ -2,3 +2,18 @@ Package Manager - https://docs.microsoft.com/en-gb/windows/win32/msi/orca-exe?re
 
 Device driver: devmgmt.msc
 
+**Process Management in Windows**
+taskkill /pid processNumber
+
+CTRL + Shift + ESC = Task Manager
+tasklist --> Process running in cmd and can get the PID number
+Get-Process --> PowerShell
+Get-Process -Name processName ---> PowerShell
+taskkill /F /PID [PROCESS ID] ----> kill a process in PowerShell
+
+Process Explorer --> Tools for IT Support and System Administrator
+
+Resource Monitor --> App for all processed are working
+Get-Process ---> Powershell
+Get-Process |Sort CPU -descending | Select -first 3 -Property ID,ProcessName,CPU ---> Powershell
+
