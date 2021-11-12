@@ -1,2 +1,22 @@
 uname -r --> version of kernel you have
 sudo apt full-upgrade --> kernel update
+
+**Process management in Linux**: https://man7.org/linux/man-pages/man1/ps.1.html
+Processes are program that are running. Lot of processes running for a program.
+less /etc/some_file | grep Hello --> less command is the parent process where all other process comes from and init is the over
+ps -x ---> Process running in Ubuntu
+ps -ef ---> run all process run by all users and
+ps -ef | grep Chrome --> all process run by Chrome
+ls -l proc ---> process running
+
+ps -aux | grep processName ---> List of running Process
+
+kill PIDno --> to kill the command
+kill -TSTP PIDno ---> suspend a process
+kill -CONT PIDno ---> resume a suspended process
+
+sudo kill [PROCESS ID] ---> Kill process
+
+top --> Show process usage in CPU
+uptime ---> time system is running and CPU load average over period od time
+lsof --> list open files and what process is using them
